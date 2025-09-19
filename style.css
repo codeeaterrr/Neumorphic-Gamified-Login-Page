@@ -1,0 +1,144 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  color: #333;
+}
+
+.login-box {
+  background: #e0e5ec;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  transform: translateX(-100vw);
+  animation: slideIn 1s ease forwards;
+  box-shadow: 10px 10px 20px #babec4,
+              -10px -10px 20px #ffffff;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #444;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  background: #e0e5ec;
+  box-shadow: inset 2px 2px 6px #babec4,
+              inset -5px -5px 10px #ffffff;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #e0e5ec;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 5px 5px 10px #babec4,
+              -5px -5px 10px #ffffff;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: inset 5px 5px 10px #babec4,
+              inset -5px -5px 10px #ffffff;
+}
+
+.progress-container {
+  width: 100%;
+  background: #e0e5ec;
+  border-radius: 12px;
+  margin-top: 20px;
+  display: none;
+  box-shadow: inset 5px 5px 10px #babec4,
+              inset -5px -5px 10px #ffffff;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 15px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border-radius: 12px;
+  transition: width 0.3s ease;
+}
+
+.status {
+  margin-top: 12px;
+  display: none;
+  font-weight: 600;
+  color: #444;
+}
+
+.social-login {
+  margin-top: 25px;
+}
+
+.social-login p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.icon-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: #e0e5ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #babec4,
+              -5px -5px 10px #ffffff;
+  transition: 0.3s;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+  box-shadow: inset 5px 5px 10px #babec4,
+              inset -5px -5px 10px #ffffff;
+}
+
+.icon-btn svg {
+  width: 22px;
+  height: 22px;
+}
